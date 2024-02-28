@@ -11,3 +11,10 @@ class Article(models.Model):
     image = models.ImageField(upload_to="images", default="")
     def __str__(self):
         return self.title
+
+class Formcontact(models.Model):
+    name = models.CharField(max_length=200, default="Name")
+    email = models.EmailField()
+    message = models.TextField()
+    def __str__(self):
+        return self.name
