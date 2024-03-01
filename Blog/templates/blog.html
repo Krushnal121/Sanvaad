@@ -44,9 +44,9 @@
           </div>
           <div class="col-md-4">
             <ul class="right-icons">
-              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-              <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+              <li><a href="https://www.instagram.com/krushnal_patil_111/"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="https://twitter.com/krushnal121"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/krushnal-jagannath-patil/"><i class="fa fa-linkedin"></i></a></li>
             </ul>
           </div>
         </div>
@@ -99,77 +99,22 @@
       </div>
     </div>
 
-    <div class="single-services">
+    <div class="more-info">
       <div class="container">
-        <div class="row">
-          <div class="col-md-8">
+        <div class="row" id="tabs">
+
             <section class='tabs-content'>
+                {% for article in Article %}
               <article id='tabs-1'>
-                <img src="static/assets/images/blog-image-1-940x460.jpg" alt="">
-                <h4><a href="dblogs">Lorem ipsum dolor sit amet, consectetur adipisicing.</a></h4>
-                <div style="margin-bottom:10px;">
-                  <span>John Doe &nbsp;|&nbsp; 27.07.2020 10:10 &nbsp;|&nbsp; 15 comments</span>
-                </div>
-                <p>Sed ut dolor in augue cursus ultrices. Vivamus mauris turpis, auctor vel facilisis in, tincidunt vel diam. Sed vitae scelerisque orci. Nunc non magna orci. Aliquam commodo mauris ante, quis posuere nibh vestibulum sit amet.</p>
-                <br>
-                <div>
-                  <a href="dblogs" class="filled-button">Continue Reading</a>
-                </div>
-              </article>
-
-              <br>
-              <br>
-              <br>
-
-              <article id='tabs-2'>
-                <img src="static/assets/images/blog-image-2-940x460.jpg" alt="">
-                <h4><a href="dblogs">Mauris lobortis quam id dictum dignissim</a></h4>
-                <div style="margin-bottom:10px;">
-                  <span>John Doe &nbsp;|&nbsp; 27.07.2020 10:10 &nbsp;|&nbsp; 15 comments</span>
-                </div>
-                <p>Sed ut dolor in augue cursus ultrices. Vivamus mauris turpis, auctor vel facilisis in, tincidunt vel diam. Sed vitae scelerisque orci. Nunc non magna orci. Aliquam commodo mauris ante, quis posuere nibh vestibulum sit amet</p>
-                <br>
-                <div>
-                  <a href="dblogs" class="filled-button">Continue Reading</a>
-                </div>
-              </article>
+                <img src="/media/{{ article.image }}" alt="" style="border-radius:30px";>
+                <h4 id="articletitle" style="font-family: 'Breul Grotesk A Light'; font-size: 30px";><a href="blog">{{ article.title}}</a></h4>
+              <h3 style="font-family: 'Breul Grotesk A Light'; font-size: 20px">{{ article.name }} | {{ article.date }}</h3><br>
+              <p style="font-family:'Breul Grotesk A Light'; color: #040505; font-size: 20px; text-align: justify">{{ article.content }}</p><br>
+              <iframe width=100% height=600 src="{{article.youtubelink}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;  gyroscope; picture-in-picture; web-share" allowfullscreen style="border-radius:30px"></iframe>
+              </article><br><br>
+                {% endfor %}
             </section>
-          </div>
 
-          <div class="col-md-4">
-              <h4 class="h4">Search</h4>
-
-              <form id="search_form" name="gs" method="GET" action="#">
-                <input type="text" name="q" class="form-control form-control-lg" placeholder="type to search..." autocomplete="on">
-              </form>
-
-              <br>
-              <br>
-
-              <h4 class="h4">Recent posts</h4>
-
-              <ul>
-                  <li>
-                      <h5 style="margin-bottom:10px;"><a href="dblogs">Dolorum corporis ullam, reiciendis inventore est repudiandae</a></h5>
-                      <small><i class="fa fa-user"></i> John Doe &nbsp;|&nbsp; <i class="fa fa-calendar"></i> 27.07.2020 10:10</small>
-                  </li>
-
-                  <li><br></li>
-
-                  <li>
-                      <h5 style="margin-bottom:10px;"><a href="dblogs">Culpa ab quasi in rerum dolorum impedit expedita</a></h5>
-                      <small><i class="fa fa-user"></i> John Doe &nbsp;|&nbsp; <i class="fa fa-calendar"></i> 27.07.2020 10:10</small>
-                  </li>
-
-                  <li><br></li>
-
-                  <li>
-                    <h5 style="margin-bottom:10px;"><a href="dblogs">Explicabo soluta corrupti dolor doloribus optio dolorum</a></h5>
-
-                    <small><i class="fa fa-user"></i> John Doe &nbsp;|&nbsp; <i class="fa fa-calendar"></i> 27.07.2020 10:10</small>
-                  </li>
-              </ul>
-          </div>
         </div>
       </div>
     </div>
@@ -185,20 +130,11 @@
         <div class="row">
           <div class="col-md-3 footer-item">
             <h4>Blog Website</h4>
-            <p>Vivamus tellus mi. Nulla ne cursus elit,vulputate. Sed ne cursus augue hasellus lacinia sapien vitae.</p>
+            <p>We envision Sanvaad as a vibrant online community where individuals from all walks of life can come together.</p>
             <ul class="social-icons">
-              <li><a rel="nofollow" href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
-              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-              <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-            </ul>
-          </div>
-          <div class="col-md-3 footer-item">
-            <h4>Useful Links</h4>
-            <ul class="menu-list">
-              <li><a href="#">Vivamus ut tellus mi</a></li>
-              <li><a href="#">Nulla nec cursus elit</a></li>
-              <li><a href="#">Vulputate sed nec</a></li>
-              <li><a href="#">Cursus augue hasellus</a></li>
+              <li><a rel="nofollow" href="https://www.instagram.com/krushnal_patil_111/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="https://twitter.com/krushnal121"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/krushnal-jagannath-patil/"><i class="fa fa-linkedin"></i></a></li>
             </ul>
           </div>
           <div class="col-md-3 footer-item">
@@ -211,33 +147,7 @@
             </ul>
           </div>
           <div class="col-md-3 footer-item last-item">
-            <h4>Contact Us</h4>
-            <div class="contact-form">
-              <form id="contact footer-contact" action="" method="post">
-                <div class="row">
-                  <div class="col-lg-12 col-md-12 col-sm-12">
-                    <fieldset>
-                      <input name="name" type="text" class="form-control" id="name" placeholder="Full Name" required="">
-                    </fieldset>
-                  </div>
-                  <div class="col-lg-12 col-md-12 col-sm-12">
-                    <fieldset>
-                      <input name="email" type="text" class="form-control" id="email" pattern="[^ @]*@[^ @]*" placeholder="E-Mail Address" required="">
-                    </fieldset>
-                  </div>
-                  <div class="col-lg-12">
-                    <fieldset>
-                      <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your Message" required=""></textarea>
-                    </fieldset>
-                  </div>
-                  <div class="col-lg-12">
-                    <fieldset>
-                      <button type="submit" id="form-submit" class="filled-button">Send Message</button>
-                    </fieldset>
-                  </div>
-                </div>
-              </form>
-            </div>
+
           </div>
         </div>
       </div>

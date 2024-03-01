@@ -32,32 +32,11 @@
     </div>  
     <!-- ***** Preloader End ***** -->
 
-    <!-- Header -->
-    <div class="sub-header">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8 col-xs-12">
-            <ul class="left-info">
-              <li><a href="mailto:krushnalpatil1111@gmail.com"><i class="fa fa-envelope"></i>krushnalpatil1111@gmail.com</a></li>
-              <li><a href="#"><i class="fa fa-phone"></i>+91 90969451334</a></li>
-            </ul>
-          </div>
-          <div class="col-md-4">
-            <ul class="right-icons">
-              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-              <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <header class="">
       <nav class="navbar navbar-expand-lg">
         <div class="container">
           <a class="navbar-brand" href="/"><h2 id="titleSanvaad" ;>संवाद</h2></a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="False" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -92,40 +71,19 @@
     <div class="main-banner header-text" id="top">
         <div class="Modern-Slider">
           <!-- Item -->
-          <div class="item item-1">
+            {% for image in images %}
+          <div class="item" style="background-image: url('/media/{{image.image}}'); background-size: 100% 100%;">
             <div class="img-fill">
                 <div class="text-content">
-                  <h6>lorem ipsum dolor sit amet!</h6>
-                  <h4>Quam temporibus accusam <br> hic ducimus quia</h4>
-                  <p>Magni deserunt dolorem consectetur adipisicing elit. Corporis molestiae optio, laudantium odio quod rerum maiores, omnis unde quae illo.</p>
-                  <a href="blog" class="filled-button">Read More</a>
+
+                  <h6>{{ image.subtitle }}</h6>
+                  <h4>{{ image.titleline1 }} <br>{{ image.titleline2 }}</h4>
+                  <p>{{ image.description }}</p>
+                  <a href="{{image.buttonhref}}" class="filled-button">{{ image.buttontext}}</a>
                 </div>
             </div>
           </div>
-          <!-- // Item -->
-          <!-- Item -->
-          <div class="item item-2">
-            <div class="img-fill">
-                <div class="text-content">
-                  <h6>magni deserunt dolorem harum quas!</h6>
-                  <h4>Aliquam iusto harum <br>  ratione porro odio</h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At culpa cupiditate mollitia adipisci assumenda laborum eius quae quo excepturi, eveniet. Dicta nulla ea beatae consequuntur?</p>
-                  <a href="about" class="filled-button">About Us</a>
-                </div>
-            </div>
-          </div>
-          <!-- // Item -->
-          <!-- Item -->
-          <div class="item item-3">
-            <div class="img-fill">
-                <div class="text-content">
-                  <h6>alias officia qui quae vitae natus!</h6>
-                  <h4>Lorem ipsum dolor <br>sit amet, consectetur.</h4>
-                  <p>Vivamus ut tellus mi. Nulla nec cursus elit, id vulputate mi. Sed nec cursus augue. Phasellus lacinia ac sapien vitae dapibus. Mauris ut dapibus velit cras interdum nisl ac urna tempor mollis.</p>
-                  <a href="contact" class="filled-button">Contact Us</a>
-                </div>
-            </div>
-          </div>
+            {% endfor %}
           <!-- // Item -->
         </div>
     </div>
@@ -137,14 +95,14 @@
           <div class="col-md-4">
             <ul>
                 {% for article in Article %}
-              <li><a href='#tabs-1'>{{article.title}} <br> <small>{{article.name}} &nbsp;|&nbsp; {{article.date}}</small></a></li>
+              <li><a href='blog'>{{article.title}} <br> <small>{{article.name}} &nbsp;|&nbsp; {{article.date}}</small></a></li>
                 {% endfor %}
             </ul>
 
             <br>
 
             <div class="text-center">
-              <a href="blog" class="filled-button">Read More</a>
+              <a href="blog" class="filled-button">Read Detailed Articles</a>
             </div>
 
             <br>
@@ -155,16 +113,12 @@
                 {% for article in Article %}
               <article id='tabs-1'>
                 <img src="/media/{{ article.image }}" alt="" style="border-radius:30px";>
-                <h4><a href="dblogs">{{ article.title}}</a></h4>
-                <p>{{article.content}}</p><br><br>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/TwEUpcV0wzY?si=MNZAtsdWhBsNeIPg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="border-radius:30px"></iframe>
+                <h4 id="articletitle" ;><a href="blog">{{ article.title}}</a></h4>
               </article>
                 {% endfor %}
             </section>
           </div>
         </div>
-
-        
       </div>
     </div>
 
@@ -181,7 +135,7 @@
               <div class="right-content">
                 <span>Who we are</span>
                 <h2>Get to know <em>about us</em></h2>
-                <p>Curabitur pulvinar sem a leo tempus facilisis. Sed non sagittis neque. Nulla conse quat tellus nibh, id molestie felis sagittis ut. Nam ullamcorper tempus ipsum in cursus</p>
+                <p>Welcome to Sanvaad, your one-stop platform for engaging and thought-provoking conversations! We're passionate about fostering connections, sharing diverse perspectives, and sparking meaningful dialogue on a variety of topics.</p>
                 <a href="about" class="filled-button">Read More</a>
               </div>
             </div>
@@ -196,22 +150,14 @@
         <div class="row">
           <div class="col-md-3 footer-item">
             <h4>Blog Website</h4>
-            <p>Vivamus tellus mi. Nulla ne cursus elit,vulputate. Sed ne cursus augue hasellus lacinia sapien vitae.</p>
+            <p>We envision Sanvaad as a vibrant online community where individuals from all walks of life can come together</p>
             <ul class="social-icons">
-              <li><a rel="nofollow" href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
-              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-              <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+              <li><a rel="nofollow" href="https://www.instagram.com/krushnal_patil_111/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="https://twitter.com/krushnal121"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/krushnal-jagannath-patil/"><i class="fa fa-linkedin"></i></a></li>
             </ul>
           </div>
-          <div class="col-md-3 footer-item">
-            <h4>Useful Links</h4>
-            <ul class="menu-list">
-              <li><a href="#">Vivamus ut tellus mi</a></li>
-              <li><a href="#">Nulla nec cursus elit</a></li>
-              <li><a href="#">Vulputate sed nec</a></li>
-              <li><a href="#">Cursus augue hasellus</a></li>
-            </ul>
-          </div>
+
           <div class="col-md-3 footer-item">
             <h4>Additional Pages</h4>
             <ul class="menu-list">
@@ -220,35 +166,6 @@
               <li><a href="blog">Blog</a></li>
               <li><a href="contact">Contact Us</a></li>
             </ul>
-          </div>
-          <div class="col-md-3 footer-item last-item">
-            <h4>Contact Us</h4>
-            <div class="contact-form">
-              <form id="contact footer-contact" action="" method="post">
-                <div class="row">
-                  <div class="col-lg-12 col-md-12 col-sm-12">
-                    <fieldset>
-                      <input name="name" type="text" class="form-control" id="name" placeholder="Full Name" required="">
-                    </fieldset>
-                  </div>
-                  <div class="col-lg-12 col-md-12 col-sm-12">
-                    <fieldset>
-                      <input name="email" type="text" class="form-control" id="email" pattern="[^ @]*@[^ @]*" placeholder="E-Mail Address" required="">
-                    </fieldset>
-                  </div>
-                  <div class="col-lg-12">
-                    <fieldset>
-                      <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your Message" required=""></textarea>
-                    </fieldset>
-                  </div>
-                  <div class="col-lg-12">
-                    <fieldset>
-                      <button type="submit" id="form-submit" class="filled-button">Send Message</button>
-                    </fieldset>
-                  </div>
-                </div>
-              </form>
-            </div>
           </div>
         </div>
       </div>
