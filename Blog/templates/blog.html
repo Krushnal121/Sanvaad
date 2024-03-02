@@ -68,7 +68,7 @@
                 </a>
               </li>
               <li class="nav-item active">
-                <a class="nav-link" href="blog">Blog</a>
+                <a class="nav-link" href="blogs">Blog</a>
               </li>
 
               <li class="nav-item">
@@ -107,7 +107,7 @@
                 {% for article in Article %}
               <article id='tabs-1'>
                 <img src="/media/{{ article.image }}" alt="" style="border-radius:30px";>
-                <h4 id="articletitle" style="font-family: 'Breul Grotesk A Light'; font-size: 30px";><a href="blog">{{ article.title}}</a></h4>
+                <h4 id="articletitle" style="font-family: 'Breul Grotesk A Light'; font-size: 30px";><a href="blogs">{{ article.title}}</a></h4>
               <h3 style="font-family: 'Breul Grotesk A Light'; font-size: 20px">{{ article.name }} | {{ article.date }}</h3><br>
               <p style="font-family:'Breul Grotesk A Light'; color: #040505; font-size: 20px; text-align: justify">{{ article.content }}</p><br>
               <iframe width=100% height=600 src="{{article.youtubelink}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;  gyroscope; picture-in-picture; web-share" allowfullscreen style="border-radius:30px"></iframe>
@@ -142,7 +142,7 @@
             <ul class="menu-list">
               <li><a href="/">Home</a></li>
               <li><a href="about">About Us</a></li>
-              <li><a href="blog">Blog</a></li>
+              <li><a href="blogs">Blog</a></li>
               <li><a href="contact">Contact Us</a></li>
             </ul>
           </div>
