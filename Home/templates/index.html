@@ -29,7 +29,7 @@
             <div></div>
             <div></div>
         </div>
-    </div>  
+    </div>
     <!-- ***** Preloader End ***** -->
 
     <header class="">
@@ -47,7 +47,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="blog">Blog</a>
+                <a class="nav-link" href="blogs">Blog</a>
               </li>
 
               <li class="nav-item">
@@ -72,17 +72,16 @@
         <div class="Modern-Slider">
           <!-- Item -->
             {% for image in images %}
-          <div class="item" style="background-image: url('/media/{{image.image}}'); background-size: 100% 100%;">
-            <div class="img-fill">
-                <div class="text-content">
-
-                  <h6>{{ image.subtitle }}</h6>
-                  <h4>{{ image.titleline1 }} <br>{{ image.titleline2 }}</h4>
-                  <p>{{ image.description }}</p>
-                  <a href="{{image.buttonhref}}" class="filled-button">{{ image.buttontext}}</a>
+                <div class="item" style="background-image: url('/media/{{image.image}}'); background-size: 100% 100%;">
+                    <div class="img-fill">
+                        <div class="text-content">
+                            <h6>{{ image.subtitle }}</h6>
+                            <h4>{{ image.titleline1 }} <br>{{ image.titleline2 }}</h4>
+                            <p>{{ image.description }}</p>
+                            <a href="{{image.buttonhref}}" class="filled-button">{{ image.buttontext}}</a>
+                        </div>
+                    </div>
                 </div>
-            </div>
-          </div>
             {% endfor %}
           <!-- // Item -->
         </div>
@@ -95,14 +94,14 @@
           <div class="col-md-4">
             <ul>
                 {% for article in Article %}
-              <li><a href='blog'>{{article.title}} <br> <small>{{article.name}} &nbsp;|&nbsp; {{article.date}}</small></a></li>
+              <li><a href='blogs'>{{article.title}} <br> <small>{{article.name}} &nbsp;|&nbsp; {{article.date}}</small></a></li>
                 {% endfor %}
             </ul>
 
             <br>
 
             <div class="text-center">
-              <a href="blog" class="filled-button">Read Detailed Articles</a>
+              <a href="blogs" class="filled-button">Read Detailed Articles</a>
             </div>
 
             <br>
@@ -113,7 +112,7 @@
                 {% for article in Article %}
               <article id='tabs-1'>
                 <img src="/media/{{ article.image }}" alt="" style="border-radius:30px";>
-                <h4 id="articletitle" ;><a href="blog">{{ article.title}}</a></h4>
+                <h4 id="articletitle" ;><a href="blogs">{{ article.title}}</a></h4>
               </article>
                 {% endfor %}
             </section>
@@ -163,14 +162,14 @@
             <ul class="menu-list">
               <li><a href="/">Home</a></li>
               <li><a href="about">About Us</a></li>
-              <li><a href="blog">Blog</a></li>
+              <li><a href="blogs">Blog</a></li>
               <li><a href="contact">Contact Us</a></li>
             </ul>
           </div>
         </div>
       </div>
     </footer>
-    
+
     <div class="sub-footer">
       <div class="container">
         <div class="row">
