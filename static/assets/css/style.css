@@ -392,8 +392,24 @@ header .navbar {
   padding: 0;
 }
 
+.Modern-Slider .item .img-fill {
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	height:95vh;
+}
 
+.Modern-Slider .item-1 .img-fill {
+	background-image: url(../images/slider-image-1-1920x900.jpg);
+}
 
+.Modern-Slider .item-2 .img-fill {
+	background-image: url(../images/slider-image-2-1920x900.jpg);
+}
+
+.Modern-Slider .item-3 .img-fill {
+	background-image: url(../images/slider-image-3-1920x900.jpg);
+}
 
 .Modern-Slider .NextArrow{
   position:absolute;
