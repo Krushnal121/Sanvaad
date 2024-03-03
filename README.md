@@ -23,15 +23,13 @@ Explore a wide array of categories, from technology and lifestyle to science and
 ✨ **Engaging Content:**
 Discover articles that encourage meaningful dialogue and offer fresh insights into various subjects.
 
-🔍 **Search Functionality:**
-Effortlessly find content by using our intuitive search feature.
 
 📰 **Latest Updates:**
 Stay informed about the latest blog posts and updates through our dynamic feed.
 
 ## How to Use
 
-1. Visit our website at [sanvaad.com](https://www.sanvaad.com).
+1. Visit our website by cloning the Repo.
 2. Explore different blog categories to find topics that interest you.
 3. Read, engage, and join the conversation by leaving comments.
 
@@ -47,7 +45,10 @@ We welcome contributions to Sanvaad! If you have an interesting article or want 
 
 Let's keep the conversation going! Connect with us for questions, feedback, or just to share your thoughts.
 
-- Email: contact@sanvaad.com
-- Twitter: [@SanvaadOfficial](https://twitter.com/SanvaadOfficial)
+- Email: <a href="mailto:email@example.com">krushnalpatil1111@gmail.com</a>
+- linkedin: <a href="https://www.linkedin.com/in/krushnal-jagannath-patil/" target="_blank">@krushnal-jagannath-patil</a>
+- Instagram: <a href="https://www.instagram.com/krushnal_patil_111/" target="_blank">@krushnal_patil_111</a>
+- Web: <a href="https://bento.me/krushnalpatil" target="_blank">bento.me/krushnalpatil </a>
+
 
 Happy reading and engaging! 🚀📚
