@@ -1,6 +1,6 @@
 # Sanvaad Blog Website 🌐🗞️
 
-![Gradient Now or Never Quote Wallpaper Dekstop](https://github.com/Krushnal121/Sanvaad/assets/109232748/41073ba7-409a-4591-aab5-a924999c2e4c)
+<img src="https://github.com/Krushnal121/Sanvaad/assets/109232748/41073ba7-409a-4591-aab5-a924999c2e4c" alt="" style="border-radius:30px";>
 
 Welcome to Sanvaad, your one-stop platform for engaging and thought-provoking conversations! Our blog website is designed to foster connections, share diverse perspectives, and spark meaningful dialogue on a variety of topics.
 
