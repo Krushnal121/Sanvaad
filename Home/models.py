@@ -13,13 +13,6 @@ class Article(models.Model):
     def __str__(self):
         return self.title
 
-class Formcontact(models.Model):
-    name = models.CharField(max_length=200, default="Name")
-    email = models.EmailField()
-    message = models.TextField()
-    def __str__(self):
-        return self.name
-
 class Banners(models.Model):
     titleline1 = models.CharField(max_length=200, default="Title")
     titleline2 = models.CharField(max_length=200, default="Title")
