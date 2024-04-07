@@ -1,3 +1,20 @@
+@font-face{
+	font-family: 'Amita-Regular';
+	src: url('../fonts/Amita-Regular.ttf') format('truetype');
+	font-weight: normal;
+}
+
+@font-face {
+	font-family:'Breul Grotesk';
+	src: url('../fonts/BreulGroteskA-SemiLight.ttf') format('truetype');
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'Breul Grotesk A Light';
+	src: url('../fonts/BreulGroteskA-Light.ttf') format('truetype');
+}
+
 body {
   font-family: 'Poppins', sans-serif;
   overflow-x: hidden;
@@ -25,11 +42,24 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 #titleSanvaad{
-	font-family:'Amita', sans-serif;
+	font-family:'Amita-Regular', sans-serif;
 }
 
 #articletitle{
-	font-family: "Breul Grotesk A Semi Light", sans-serif;
+	font-family: "Breul Grotesk", sans-serif;
+	font-size: 30px;
+}
+
+#articlenamedata{
+	font-family: 'Breul Grotesk A Light';
+	font-size: 20px;
+}
+
+#para{
+	font-family:'Breul Grotesk A Light';
+	color: #040505;
+	font-size: 20px;
+	text-align: justify
 }
 
 a.filled-button {

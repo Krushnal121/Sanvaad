@@ -107,9 +107,9 @@
                 {% for article in Article %}
               <article id='tabs-1'>
                 <img src="/media/{{ article.image }}" alt="" style="border-radius:30px";>
-                <h4 id="articletitle" style="font-family: 'Breul Grotesk A Light'; font-size: 30px";><a href="blogs">{{ article.title}}</a></h4>
-              <h3 style="font-family: 'Breul Grotesk A Light'; font-size: 20px">{{ article.name }} | {{ article.date }}</h3><br>
-              <p style="font-family:'Breul Grotesk A Light'; color: #040505; font-size: 20px; text-align: justify">{{ article.content }}</p><br>
+                <h4 id="articletitle" ;><a href="blogs">{{ article.title}}</a></h4>
+              <h3 id="articlenamedata" >{{ article.name }} | {{ article.date }}</h3><br>
+              <p id="para">{{ article.content }}</p><br>
               <iframe width=100% height=600 src="{{article.youtubelink}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;  gyroscope; picture-in-picture; web-share" allowfullscreen style="border-radius:30px"></iframe>
               </article><br><br>
                 {% endfor %}
